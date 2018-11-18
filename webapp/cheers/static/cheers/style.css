@@ -1,0 +1,28 @@
+p {
+    color: green;
+    background-color: white;
+    padding: 5px;
+}
+
+body {
+    background-image: url("https://pbs.twimg.com/profile_images/653700295395016708/WjGTnKGQ_400x400.png");
+    background-color: #cccccc;
+}
+table {
+    background-color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
