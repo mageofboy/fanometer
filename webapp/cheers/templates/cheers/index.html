@@ -7,60 +7,45 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %} -->
+<html>
 {% load static %}
-
+<head>
 <link rel="stylesheet" type="text/css" href="{% static 'cheers/style.css' %}">
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#b">Roster & Stats</a></li>
-  <li><a href="#c">Game Schedule</a></li>
-  <li><a href="#d">League Standings</a></li>
-  <li><a class="active" href="#e">Fan Zone</a></li>
-  <li><a href="#f">Podcasts & Playlists</a></li>
-  <li><a href="#g">Settings</a></li>
-</ul>
+<title>Band Listing</title>
 </head>
+<body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#b">Roster & Stats</a></li>
+      <li><a href="#c">Game Schedule</a></li>
+      <li><a href="#d">League Standings</a></li>
+      <li><a class="active" href="#e">Fan Zone</a></li>
+      <li><a href="#f">Podcasts & Playlists</a></li>
+      <li><a href="#g">Settings</a></li>
+    </ul>
 <div class="main">
 {% load static %}
 <img src="{% static "cheers/sackingslogo.png" %}" alt="My image" width = "150px" height = "175px" class = "center">
-<p> Hello World and aliens and cats and stuff</p>
-<!-- <a href = "/main"> lol </a> -->
+<!-- <p> Hello World and aliens and cats and stuff</p> -->
+<a href = "/main"> lol </a>
 <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
+    <tr>
+        <th>Name</th>
+        <th>Section</th>
+        <th>Sound level (db)</th>
+    </tr>
+    {% for row in table %}
+    <tr>
+        <td>{{row.0}} </td>
+        <td>{{row.1}} </td>
+        <td> {{row.2}}</td>
+    </tr>
+    {% endfor %}
 
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
 </table>
 </div>
+</body>
+<footer>
+nandddi
+</footer>
+</html>

@@ -4,19 +4,22 @@ p {
     padding: 5px;
 }
 
+body {
+    background-image: url("http://cdn.sqhk.co/connor/2016/10/EKhY5oa/IMG_2487.JPG");
+    opacity: 0.75;
+    background-size: cover;
+}
 div.main {
-    background-image: url("");
-    background-color: black;
     margin-left:15%;
-    padding:1px 16px;
 }
-table {
-    background-color: white;
-}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    opacity: 1.0;
+    background-color: white;
+
 }
 
 td, th {
@@ -45,6 +48,7 @@ ul {
     background-image: url(white);
     background-size: contain;
     background-repeat: no-repeat;
+    font-weight: bold;
 }
 
 li a {
@@ -61,5 +65,15 @@ li a.active {
 
 li a:hover:not(.active) {
     background-color: #909291;
+    color: white;
+}
+footer {
+    position: absolute;
+    bottom:0;
+    width:84%;
+    height:30px;
+    opacity: 1;
+    margin-left: 15%;
+    background-color: black;
     color: white;
 }
