@@ -10,13 +10,21 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'cheers/style.css' %}">
-
-<p> Hello World and aliens and cats and stuff</p>
-<a href = "/main"> lol </a>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#b">Roster & Stats</a></li>
+  <li><a href="#c">Game Schedule</a></li>
+  <li><a href="#d">League Standings</a></li>
+  <li><a class="active" href="#e">Fan Zone</a></li>
+  <li><a href="#f">Podcasts & Playlists</a></li>
+  <li><a href="#g">Settings</a></li>
+</ul>
 </head>
-<body>
-<img src="./sackingslogo.png" alt="">
-
+<div class="main">
+{% load static %}
+<img src="{% static "cheers/sackingslogo.png" %}" alt="My image" width = "150px" height = "175px" class = "center">
+<p> Hello World and aliens and cats and stuff</p>
+<!-- <a href = "/main"> lol </a> -->
 <table>
   <tr>
     <th>Company</th>
@@ -45,6 +53,7 @@
   </tr>
   <tr>
     <td>Laughing Bacchus Winecellars</td>
+
     <td>Yoshi Tannamuri</td>
     <td>Canada</td>
   </tr>
@@ -54,4 +63,4 @@
     <td>Italy</td>
   </tr>
 </table>
-</body>
+</div>
