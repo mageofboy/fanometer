@@ -10,7 +10,7 @@ body {
     background-size: cover;
 }
 div.main {
-    margin-left:15%;
+    margin-left:16%;
 }
 
 table {
@@ -19,7 +19,6 @@ table {
     width: 100%;
     opacity: 1.0;
     background-color: white;
-
 }
 
 td, th {
@@ -68,12 +67,14 @@ li a:hover:not(.active) {
     color: white;
 }
 footer {
-    position: absolute;
-    bottom:0;
+
     width:84%;
     height:30px;
     opacity: 1;
     margin-left: 15%;
     background-color: black;
     color: white;
+}
+#table.data {
+    background-color: black;
 }
